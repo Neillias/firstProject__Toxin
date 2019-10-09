@@ -1,0 +1,23 @@
+.header-main__nav {
+    margin: auto;
+    margin-right: 30px;
+
+    li {
+        margin-right: 20.9px;
+        padding-top: 5px;
+        *{
+            transition: 0s;
+        }
+    }
+
+    li:nth-child(1) {
+        font-weight: bold;
+        color: $dark-shade-75;
+    }
+    li:nth-child(2) {
+        margin-right: 30px;
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+}

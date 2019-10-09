@@ -1,0 +1,15 @@
+mixin checkboxButtonExpandable(option)
+    .checkbox-list
+        h3= option.title                    
+        i(class="material-icons checkbox-list__button") expand_more
+        .checkbox-list__menu.hidden
+            .checkbox-buttons
+                h3= option.header
+                ul
+                    - for (var i = 0; i < option.buttons; i++)
+                        li
+                            .checkbox-buttons__container
+                                .checkbox-buttons__input                    
+                                    input(type="checkbox" id= option.id + i)
+                                    span.checkbox-buttons__input-container
+                                label(for= option.id + i)= option.value[i]

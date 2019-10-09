@@ -1,0 +1,7 @@
+@mixin btn-params($color) {
+    position: relative;
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 1px solid $color;
+    border-radius: 50%;
+}

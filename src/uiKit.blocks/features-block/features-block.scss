@@ -1,0 +1,27 @@
+@import "./__text/features-block__text.scss";
+@import "./__title/features-block__title.scss";
+@import "./__description/features-block__description.scss";
+
+.features-block {
+    max-width: 280px;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20.5px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    margin-bottom: 20px;
+
+    i {
+        margin-right: 10px;
+        font-size: 48px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: initial;
+    }
+
+    &:nth-child(n+4) {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

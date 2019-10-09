@@ -1,0 +1,18 @@
+.header-main__dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -0.625rem;
+    color: $dark-shade-50;
+    position: relative;
+
+     i {
+        margin-top: -0.25rem;
+        transition: 1s;
+        margin-left: 2px;
+     }
+
+     &:hover {
+         cursor: pointer;
+         color: black;
+     }
+}

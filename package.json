@@ -1,0 +1,30 @@
+{
+  "name": "projectToxin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/pug/index.pug --public-url / --open",
+    "build": "parcel build src/pug/index.pug --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "autoprefixer": "^9.6.4",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.23.0"
+  },
+  "dependencies": {
+    "air-datepicker": "^2.2.3",
+    "datepicker": "0.0.0",
+    "jquery": "^3.4.1",
+    "jquery-ui-dist": "^1.12.1",
+    "nouislider": "^13.1.5",
+    "owl.carousel": "^2.3.4",
+    "paginationjs": "^2.1.4",
+    "wnumb": "^1.1.0"
+  }
+}

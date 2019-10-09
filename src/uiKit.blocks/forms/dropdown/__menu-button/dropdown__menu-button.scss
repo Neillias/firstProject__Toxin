@@ -1,0 +1,14 @@
+.dropdown__menu-button {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    position: absolute;
+    right: 0px;
+    top: 17px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

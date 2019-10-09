@@ -1,0 +1,12 @@
+.form-card__text {
+    margin-right: 0.3125rem;
+    padding-top: 0.4375rem;
+}
+
+.form-card__text:nth-last-child(1) {
+    margin-right: 0;
+}
+
+@import "./_bold/form-card__text_bold.scss";
+@import "./_high/form-card__text_high.scss";
+@import "./_purple/form-card__text_purple.scss";

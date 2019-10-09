@@ -1,0 +1,35 @@
+.button {
+    user-select: none;
+    border-radius: 1.375rem;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 15px;
+    color: $purple;
+    padding: 0 19px;
+    transition: 0.2s;
+
+    &:hover{
+        cursor: pointer;
+        color: $dark-shade-50;
+    }
+
+    &:active{
+        color: $purple;
+        
+    }
+}
+
+.button_hovered {
+    font-size: 12px;
+    text-transform: uppercase;
+    user-select: none;
+    font-weight: bold;
+    cursor: pointer;    
+    color: $dark-shade-50;    
+}
+
+@import "./_theme/button_theme_colored.scss";
+@import "./_theme/button_theme_long.scss";
+@import "./__ghost/button__ghost.scss";
+@import "./__ghost-content/button__ghost-content.scss";

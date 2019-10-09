@@ -1,0 +1,12 @@
+mixin button(options)
+    if options.theme == 'colored'
+        .button.button_theme_colored= options.text            
+    else if options.theme == 'ghost'
+        .button.button__ghost
+                .button__ghost-content= options.text                   
+    else if options.theme == 'long'
+        .button.button_theme_long= options.text            
+            i(class="material-icons") arrow_forward
+    else
+        .button= options.text
+            

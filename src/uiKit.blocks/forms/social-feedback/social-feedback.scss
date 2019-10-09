@@ -1,0 +1,16 @@
+@import "./__header/social-feedback__header.scss";
+@import "./__photo/social-feedback__photo.scss";
+@import "./__title/social-feedback__title.scss";
+@import "./__name/social-feedback__name.scss";
+@import "./__main/social-feedback__main.scss";
+@import "./__like/social-feedback__like.scss";
+@import "./__text/social-feedback__text.scss";
+
+.social-feedback {
+    width: 100%;
+    margin-bottom: 22px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

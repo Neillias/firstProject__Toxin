@@ -1,0 +1,8 @@
+@import "./__name/type-block__name.scss";
+@import "./__text/type-block__text.scss";
+
+.type-block {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3.5em;
+}

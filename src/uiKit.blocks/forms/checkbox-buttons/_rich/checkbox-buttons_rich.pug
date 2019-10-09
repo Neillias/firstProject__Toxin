@@ -1,0 +1,18 @@
+mixin richCheckboxButton(option)
+    .checkbox-buttons
+        h3= option.title                
+        ul
+            li.checkbox-buttons__container            
+                .checkbox-buttons__input
+                    input(type="checkbox" id="rich1")
+                    span.checkbox-buttons__input-container
+                label(for="rich1")
+                    p.checkbox-buttons__title Широкий коридор
+                    p.checkbox-buttons__description Ширина коридоров в номере не менее 91 см.
+            li.checkbox-buttons__container                
+                .checkbox-buttons__input
+                    input(type="checkbox" id="rich2")
+                    span.checkbox-buttons__input-container
+                label(for="rich2")
+                    p.checkbox-buttons__title Помощник для инвалидов
+                    p.checkbox-buttons__description На 1 этаже вас встретит специалист и проводит до номера

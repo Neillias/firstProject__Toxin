@@ -1,0 +1,34 @@
+$type-name-color: rgba(31, 32, 65, 0.25);
+%head-styles {
+    color: $type-name-color;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+%prime-font {
+    font-family: Montserrat;
+}
+
+.type-block__name {
+    margin-right: 2em;
+    width: 2em;
+    text-align: right;
+    h1 {
+        @extend %head-styles;
+        @extend %prime-font;  
+    }
+
+    h2 {
+        @extend %head-styles;
+        @extend %prime-font;
+    }
+
+    h3 {
+        @extend %head-styles;
+        @extend %prime-font;
+    }
+
+    p {
+        color: $type-name-color;
+        @extend %prime-font;                
+    }        
+}

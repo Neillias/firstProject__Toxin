@@ -1,0 +1,7 @@
+@import "./__button/subscription-text-field__buttons.scss";
+@import "../_mixins.scss";
+
+.subscription-text-field {
+    @include inputParams(16.6875rem);
+    position: relative;
+}

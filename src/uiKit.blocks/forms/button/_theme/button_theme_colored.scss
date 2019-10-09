@@ -1,0 +1,35 @@
+.button_theme_colored {
+    height: 2.75rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 1.375rem;
+    text-align: center;
+    padding-top: 0.9063rem;
+    color: #FFFFFF;
+
+    &:hover {
+        opacity: 0.5;
+
+        h3 {
+            color: #FFFFFF;
+        }
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}
+
+.button_theme_colored_hovered {
+    width: 6.1875rem;
+    height: 2.75rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 1.375rem;
+    text-align: center;
+    padding-top: 0.9063rem;
+    opacity: 0.5;
+    color: #FFFFFF;
+
+    &:hover {        
+        color: #FFFFFF;        
+    }
+}

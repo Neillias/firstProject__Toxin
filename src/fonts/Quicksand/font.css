@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('Quicksand-BoldItalic.eot');
+  src: url('Quicksand-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('Quicksand-BoldItalic.svg#Quicksand-BoldItalic') format('svg'),
+       url('Quicksand-BoldItalic.ttf') format('truetype'),
+       url('Quicksand-BoldItalic.woff') format('woff'),
+       url('Quicksand-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+

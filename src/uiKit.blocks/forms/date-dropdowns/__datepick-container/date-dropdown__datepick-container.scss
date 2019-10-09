@@ -1,0 +1,31 @@
+.date-dropdown__datepick-container {
+    display: none;
+    position: absolute;
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    z-index: 20;
+    top: 70px;
+    border-radius: 4px;
+    border: 1px solid $dark-shade-25;    
+}
+
+.date-dropdown__datepick-container_visible {
+    display: block;
+    position: static;
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    z-index: 20;
+    top: 70px;
+    border-radius: 4px;
+    border: 1px solid $dark-shade-25;
+
+    .elem-container {
+        margin-top: -40px;
+    }
+}

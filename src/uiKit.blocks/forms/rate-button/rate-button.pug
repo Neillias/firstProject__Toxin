@@ -1,0 +1,13 @@
+mixin rateButton(options)    
+    - var rate = options.rate
+    
+    .rate-button
+        - for (let i = 0; i < 5; i++)
+            if i >= rate
+                .rate-button__elem
+                    i(class='material-icons-outlined rate-button__icon') grade                
+            else                
+                .rate-button__elem
+                    i(class='material-icons rate-button__icon') grade
+            
+        

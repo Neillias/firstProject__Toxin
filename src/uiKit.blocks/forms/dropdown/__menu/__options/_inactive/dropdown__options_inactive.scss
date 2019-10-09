@@ -1,0 +1,16 @@
+.dropdown__options_inactive {
+    @include btn-params($dark-shade-25);
+
+    p {
+        color: $dark-shade-25;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-color: $dark-shade-25;
+
+        p {
+            color: $dark-shade-25;
+        }
+    }
+}

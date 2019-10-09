@@ -1,0 +1,165 @@
+include ../uiKit.blocks/color-block/color-block
+include ../uiKit.blocks/type-block/type-block
+include ../uiKit.blocks/forms/forms
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="../fonts/fonts.scss")
+        link(rel="stylesheet", href="../reset.css")
+        link(rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css")
+        link(rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.css")        
+        link(rel="stylesheet", href="../scss/main.scss")
+
+    body
+        header
+            .header-main
+                .header-main__container
+                    a(href="./index.pug").header-main__logo
+                        img(src="../img/logoMain.svg", alt="")
+                    .header-main__nav-container
+                        .header-main__nav-toggle
+                            span
+                        .header-main__nav
+                            ul.cont-flex
+                                li
+                                    a(href="") О нас                
+                                li
+                                    .header-main__dropdown
+                                        p Услуги
+                                        i.material-icons expand_more
+                                        .header-main__dropdown-content.hidden
+                                            ul
+                                                li
+                                                    a(href="")  Item 1
+                                                li
+                                                    a(href="")  Item 2
+                                                li
+                                                    a(href="")  Item 3
+                                                li
+                                                    a(href="")  Item 4                                            
+                                li
+                                    a(href="") Вакансии
+                                li
+                                    a(href="") Новости
+                                li
+                                    .header-main__dropdown
+                                        p Соглашения
+                                        i.material-icons expand_more
+                                        .header-main__dropdown-content.hidden
+                                            ul
+                                                li
+                                                    a(href="")  Item 1
+                                                li
+                                                    a(href="")  Item 2
+                                                li
+                                                    a(href="")  Item 3
+                                                li
+                                                    a(href="")  Item 4
+                        .header-main__buttons
+                            .header-main__login
+                                a(href="./signIn.pug")
+                                    +button({theme: 'ghost', text: 'Войти'})                                                
+                            .header-main__register
+                                a(href="./registration.pug")
+                                    +button({theme: 'colored', text: 'Зарегистрироваться'})
+            
+        main
+            .landingPage-main
+                .landingPage-main__container
+                    .landingPage-main__block_card
+                        .form-card
+                            .form-card__block
+                                h1 Найдем номера под ваши пожелания
+                            form(action="")
+                                .form-card__block                        
+                                    .date-dropdowns.cont-flex
+                                        .date-dropdowns__input
+                                            h3 Прибытие
+                                            input(type='text' class='splitfield date start2' autocomplete="off" placeholder='ДД.ММ.ГГГГ')
+                                            .date-dropdown__toggle
+                                                i(class="material-icons") expand_more                                            
+                                        .date-dropdowns__input
+                                            h3 Выезд
+                                            input(type='text' class='splitfield date end2' autocomplete="off" placeholder='ДД.ММ.ГГГГ')
+                                            .date-dropdown__toggle
+                                                i(class="material-icons") expand_more
+                                        .date-dropdown__datepick-container
+                                            .datepicker_uiKit
+                                            .date-dropdown__buttons
+                                                div
+                                                .dropdown__apply-btn Применить                                                    
+                                .form-card__block
+                                    +dropdown({name: 'Гости', type: 'Guests'})
+                                .form-card__block
+                                    a(href="./searchRoom.pug")
+                                        +button({theme: 'long', text: 'Подобрать номер'})
+                    .landingPage-main__block_tip
+                        p Лучшие номера для вашей работы,<br> отдыха и просто вдохновения
+        
+        footer
+            .footer-main
+                .footer-main__container
+                    .footer-main__logo
+                        img(src="../img/logoMain.svg", alt="")
+                        .footer-main__caption 
+                            p   Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                    .footer-main__menuList
+                        h3 Навигация
+                        ul
+                            li
+                                a(href="") О нас
+                            li
+                                a(href="") Новости
+                            li
+                                a(href="") Служба поддержки
+                            li
+                                a(href="") Услуги
+                    .footer-main__menuList
+                        h3 О нас
+                        ul
+                            li
+                                a(href="") О сервисе
+                            li
+                                a(href="") Наша команда
+                            li
+                                a(href="") Вакансии
+                            li
+                                a(href="") Инвесторы
+                    .footer-main__menuList
+                        h3 Служба поддержки
+                        ul
+                            li
+                                a(href="") Соглашения
+                            li
+                                a(href="") Сообщества
+                            li
+                                a(href="") Связь с нами
+                    .footer-main__menuList
+                        h3 Подписка
+                        .footer-main__caption
+                            p Получайте специальные<br> предложения и новости сервиса
+                        form(action="")
+                            +subTextField({placeholder: 'Email'})
+                .footer-main__border
+                .footer-main__copyright
+                    p Copyright © 2018 Toxin отель. Все права защищены.
+                    .footer-main__contacts
+                        a(href="")  
+                            <i class="fab fa-twitter"></i>
+                        a(href="")
+                            <i class="fab fa-facebook-square"></i>
+                        a(href="")
+                            <i class="fab fa-instagram"></i>
+    
+    script(src="../js/main.js")
+    script(src="../airpicker/datepicker.min.js")
+    script(src="../airpicker/air-datepicker.js")
+    script(src="../../node_modules/owl.carousel/dist/owl.carousel.min.js")
+    script(src="../carousel/carousel.js")
+    //-script(src="../common.blocks/pagination/pagination.min.js")
+    //-script(src="../common.blocks/pagination/paginationjs.js")

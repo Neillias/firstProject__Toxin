@@ -1,0 +1,13 @@
+mixin checkboxButton(option)
+    .checkbox-buttons
+        h3= option.header
+        ul
+            - for (var i = 0; i < option.buttons; i++)
+                li.checkbox-buttons__container
+                    .checkbox-buttons__input                    
+                        input(type="checkbox" id= option.id + i)
+                        span.checkbox-buttons__input-container
+                    label(for= option.id + i)= option.value[i]
+
+include ./_rich/checkbox-buttons_rich
+include ./_expandable/checkbox-buttons_expandable

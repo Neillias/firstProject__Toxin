@@ -1,0 +1,26 @@
+include ../../forms/rate-button/rate-button
+
+mixin roomCard(options)
+    .room-card
+        .room-card__image.owl-carousel.owl-theme
+            a(href="./roomDetails.pug") 
+                img(src= options.src, alt="")
+            a(href="./roomDetails.pug") 
+                img(src= options.src, alt="")
+            a(href="./roomDetails.pug") 
+                img(src= options.src, alt="")
+            a(href="./roomDetails.pug") 
+                img(src= options.src, alt="")
+        .room-card__info
+            .cont-flex
+                p.room-card__text.room-card__text_black №
+                p.room-card__text.room-card__text_high= options.number
+                p.room-card__text.room-card__text_luxe= options.luxe
+            .cont-flex
+                p.room-card__text.room-card__text_bold= options.price
+                p.room-card__text.room-card__text_standart в сутки
+        .room-card__feedback
+            +rateButton(options)
+            a(href="").cont-flex
+                p.room-card__text.room-card__text_bold= options.feedback  
+                p.room-card__text.room-card__text_standart Отзывов

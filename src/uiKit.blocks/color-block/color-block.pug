@@ -1,0 +1,7 @@
+mixin color-block(color, name, code)
+    - var className = "color-block__item " + "color-block__item_color_" + color
+    .color-block
+        div(class = className)
+        .color-block__name
+            h2= name
+            p= code

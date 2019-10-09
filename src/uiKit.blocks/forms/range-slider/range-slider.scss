@@ -1,0 +1,13 @@
+@import "./nouislider.min.scss";
+@import "./rangeSlider/rangeSlider.scss";
+@import "./__head/range-slider__head.scss";
+@import "./__tip/range-slider__tip.scss";
+
+.range-slider {
+    width: 100%;
+    margin-bottom: 14px;
+    
+    *, *:after, *:before {
+        transition: 0s;
+    }
+}

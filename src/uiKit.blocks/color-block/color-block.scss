@@ -1,0 +1,9 @@
+@import "./__item/color-block__item.scss";
+@import "./__name/color-block__name.scss";
+
+.color-block {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    margin-bottom: 20px;
+}

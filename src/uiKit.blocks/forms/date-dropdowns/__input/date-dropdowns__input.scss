@@ -1,0 +1,13 @@
+@import "../../mixins";
+
+.date-dropdowns__input {
+    @include inputParams(150px);
+
+    input {
+        &::placeholder {
+            color: $dark-shade-50;
+        }
+    }
+}
+
+@import "./_type/date-dropdowns__input_type_filterDate.scss";

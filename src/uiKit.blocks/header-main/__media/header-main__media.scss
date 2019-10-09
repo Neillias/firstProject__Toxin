@@ -1,0 +1,107 @@
+@media (max-width: 950px) { 
+    .header-main__nav-toggle {
+        display: block;
+    }
+
+    .header-main__nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        background: #FFFFFF;
+        ul {
+            padding: 0 15px;
+
+            li:last-child {
+                margin-right: 0.4375rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body{
+        .header-main {
+            height: auto;
+        }
+    }
+    
+    .header-main__container {
+        display: inline-block;
+        height: auto;
+        text-align: center;
+        padding: 0;
+        background: #FFFFFF;
+    }
+
+    .header-main__nav-container {
+        display: block;
+    }
+
+    .header-main__nav {
+        display: none;
+        position: static;
+
+        .cont-flex {
+            display: block;
+        }
+
+        li {
+            height: 2.1875rem;
+            background: #FFFFFF;
+            margin: 0 auto;
+            border-bottom: 1px solid $dark-shade-25;
+            padding-top: 0.625rem;
+        }
+        ul {
+            padding: 0;
+            margin-bottom: 0.9375rem;
+
+            li:nth-child(2) {
+                margin-right: 0;
+                margin-left: 11px;
+            }
+            li:last-child {
+                margin-right: 0;
+                margin-left: 11px;
+            }
+        }
+    }
+
+    .header-main__logo {
+        display: inline-block;
+        margin: 0.9375rem auto; 
+    }
+
+    .header-main__nav-toggle {
+        margin: 15px auto;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .header-main__dropdown {
+        justify-content: center;
+    }
+
+    .header-main__dropdown-content {
+        left: 40%;
+
+        ul {          
+            margin-bottom: 0;
+
+            &>li:nth-child(2) {
+                margin-left: 0;
+            }
+            &>li:last-child {
+                margin-left: 0;
+                border: none;
+            }
+        }        
+    }
+
+    .header-main__buttons {
+        justify-content: space-around;
+        margin-bottom: 0.9375rem;
+    }
+}

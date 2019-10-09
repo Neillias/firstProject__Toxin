@@ -1,0 +1,24 @@
+.pieChart__tip {
+    margin-bottom: 10px;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $dark-shade-50;
+        border-radius: 50%;
+        left:-15px;
+        top: 2px;
+    }
+}
+
+@import "./_magnificent/pieChart__tip_magnificent.scss";
+@import "./_well/pieChart__tip_well.scss";
+@import "./_satisfying/pieChart__tip_satisfying.scss";
+@import "./_dissapointed/pieChart__tip_dissapointed.scss";

@@ -1,0 +1,15 @@
+@import "./__container/footer-main__container.scss";
+@import "./__container/_mid/footer-main__container_mid.scss";
+@import './__caption/footer-main__caption.scss';
+@import "./__logo/footer-main__logo.scss";
+@import "./__menuList/footer-main__menuList.scss";
+@import "./__copyright/footer-main__copyright.scss";
+@import "./__contacts/footer-main__contacts.scss";
+@import "./__border/footer-main__border.scss";
+
+.footer-main {
+    background: #FFFFFF;
+    box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
+}
+
+@import "./__media/footer-main__media.scss";

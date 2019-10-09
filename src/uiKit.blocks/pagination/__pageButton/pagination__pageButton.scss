@@ -1,0 +1,22 @@
+.pagination__pageButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.875rem;
+    color: $dark-shade-50;
+    font-size: 12px;
+
+    &:hover {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    &:active {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+@import "./_active/pagination__pageButton_active.scss";

@@ -1,0 +1,131 @@
+mixin dropdownExpanded(option)
+    if option.type == 'Guests'
+        .dropdown
+            if option.name == 'Dropdown'
+                h3= option.name
+            if option.value == 'fill'
+                input(type="text" name= option.type value="3 гостя" disabled)
+                i.material-icons.dropdown__menu-button expand_more
+                .dropdown__menu-container.dropdown__menu-container-type_standart
+                    .dropdown__menu
+                        ul
+                            li
+                                .cont-flex
+                                    h3 Взрослые
+                                    .dropdown__options.cont-flex                                            
+                                        .dropdown__remove-btn.dropdown__options_inactive
+                                            p -                                            
+                                        .dropdown__result
+                                            h3 2                                            
+                                        .dropdown__add-btn
+                                            p +                             
+                            li
+                                .cont-flex
+                                    h3 Дети
+                                    .dropdown__options.cont-flex                                            
+                                        .dropdown__remove-btn.dropdown__options_inactive
+                                            p -                                            
+                                        .dropdown__result
+                                            h3 1                                           
+                                        .dropdown__add-btn
+                                            p +
+                            li
+                                .cont-flex
+                                    h3 Младенцы
+                                    .dropdown__options.cont-flex                                            
+                                        .dropdown__remove-btn.dropdown__options_inactive
+                                            p -                                            
+                                        .dropdown__result
+                                            h3 0                                            
+                                        .dropdown__add-btn
+                                            p +
+                            li
+                                .cont-flex
+                                    div
+                                        .dropdown__clear-btn Очистить                                            
+                                    .dropdown__apply-btn Применить                                  
+            else
+                input(type="text" name= option.type value="Сколько гостей" disabled)
+                i.material-icons.dropdown__menu-button expand_more 
+                .dropdown__menu-container.dropdown__menu-container-type_standart
+                    .dropdown__menu
+                        ul
+                            li
+                                .cont-flex
+                                    h3 Взрослые
+                                    .dropdown__options.cont-flex                                            
+                                        .dropdown__remove-btn.dropdown__options_inactive
+                                            p -                                            
+                                        .dropdown__result
+                                            h3 0                                            
+                                        .dropdown__add-btn
+                                            p +                             
+                            li
+                                .cont-flex
+                                    h3 Дети
+                                    .dropdown__options.cont-flex                                            
+                                        .dropdown__remove-btn.dropdown__options_inactive
+                                            p -                                            
+                                        .dropdown__result
+                                            h3 0                                            
+                                        .dropdown__add-btn
+                                            p +
+                            li
+                                .cont-flex
+                                    h3 Младенцы
+                                    .dropdown__options.cont-flex                                            
+                                        .dropdown__remove-btn.dropdown__options_inactive
+                                            p -                                            
+                                        .dropdown__result
+                                            h3 0                                            
+                                        .dropdown__add-btn
+                                            p +
+                            li
+                                .cont-flex
+                                    div
+                                        .dropdown__clear-btn Очистить                                            
+                                    .dropdown__apply-btn Применить    
+    else if option.type == 'Rooms'
+        .dropdown.dropdown_size_m
+            if option.name == 'Dropdown'
+                h3= option.name        
+                p Expanded
+            else 
+                h3= option.name
+            input(type="text" name= option.type value="2 спальни, 2 кровати, 0 ванных" disabled)
+            i.material-icons.dropdown__menu-button expand_more            
+            .dropdown__menu-container.dropdown__menu-container-type_standart
+                .dropdown__menu
+                    ul
+                        li
+                            .cont-flex
+                                h3 Спальни
+                                .dropdown__options.cont-flex                                            
+                                    .dropdown__remove-btn
+                                        p -                                            
+                                    .dropdown__result
+                                        h3 2                                            
+                                    .dropdown__add-btn
+                                        p +                             
+                        li
+                            .cont-flex
+                                h3 Кровати
+                                .dropdown__options.cont-flex                                            
+                                    .dropdown__remove-btn
+                                        p -                                            
+                                    .dropdown__result
+                                        h3 2                                            
+                                    .dropdown__add-btn
+                                        p +
+                        li
+                            .cont-flex
+                                h3 Ванные комнаты
+                                .dropdown__options.cont-flex                                            
+                                    .dropdown__remove-btn.dropdown__options_inactive
+                                        p -                                            
+                                    .dropdown__result
+                                        h3 0                                            
+                                    .dropdown__add-btn
+                                        p +       
+    else 
+        p There are no options

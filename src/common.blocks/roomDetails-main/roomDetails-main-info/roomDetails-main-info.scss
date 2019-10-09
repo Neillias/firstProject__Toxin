@@ -1,0 +1,17 @@
+.roomDetails-main-info {
+    width: 100%;
+    max-width: 1190px;
+    padding: 0 15px;    
+    margin: 73px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@import "./__container/roomDetails-main-info__container.scss";
+@import "./__card/roomDetails-main-info__card.scss";
+@import "./__block-container/roomDetails-main-info__block-container.scss";
+@import "./__block/roomDetails-main-info__block.scss";
+@import "./__feedback-title/roomDetails-main-info__feedback-title.scss";
+@import "./__block-title/roomDetails-main-info__block-title.scss";
+@import "./__tip/roomDetails-main-info__tip.scss";

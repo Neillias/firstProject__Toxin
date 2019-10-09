@@ -1,0 +1,24 @@
+.dropdown__add-btn {
+    @include btn-params($dark-shade-50);
+    margin-top: -0.3125rem;
+    margin-right: -0.3125rem;
+    transition: 0s;
+
+    p {
+        position: absolute;
+        font-size: 18px;
+        color: $dark-shade-50;
+        padding: 0.3125rem;
+        padding-left: 0.5625rem;
+        z-index: -1;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-color: $purple;
+
+        p {
+            color: $purple;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.button__ghost {
+    height: 44px;
+    border-radius: 22px;
+    padding: 2px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+        color: $purple;
+    }
+}
+
+.button__ghost_hovered {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+    color: $purple;    
+}

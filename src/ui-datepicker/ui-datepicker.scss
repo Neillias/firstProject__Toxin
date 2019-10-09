@@ -1,0 +1,101 @@
+.ui-datepicker {
+    width: 20rem;
+
+    *{
+        transition: 0s;
+    }
+
+    .ui-datepicker-header {
+        margin-bottom: 1.875rem;
+    }
+
+    .ui-state-hover {
+        background: none;
+    }
+
+    &-header {
+        background: none;
+        border: none;        
+    }
+
+    .ui-icon {
+        background-image: none;
+    }
+
+    &-prev {
+        width: 1.4963rem;
+        height: 1.5rem;
+        background-image: url(../img/arrow_back.svg);
+        background-size: cover;
+    }
+
+    &-next {
+        width: 1.4963rem;
+        height: 1.5rem;
+        background-image: url(../img/arrow_forward.svg);
+        background-size: cover;
+    }
+
+    .ui-datepicker-prev-hover {
+        border: none;
+        opacity: 0.7;
+        background-image: url(../img/arrow_back.svg);
+        background-size: cover;
+    }
+
+    .ui-datepicker-next-hover {
+        border: none;
+        opacity: 0.7;
+        background-image: url(../img/arrow_forward.svg);
+        background-size: cover;
+    }    
+
+    &-month, &-year {
+        font-size: 1.1875rem;
+        font-family: Montserrat;
+    }
+
+    .ui-datepicker-calendar {
+        thead {
+            font-size: 0.75rem;
+            font-family: Montserrat;
+            color: $purple;
+        }
+
+        tbody {
+            tr {
+                td {
+                    .ui-state-default {
+                        border-radius: 50%;
+                        text-align: center;
+                        padding-top: 0.9375rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        background: none;
+                        border: none;
+                        font-family: Montserrat;
+                        color: $dark-shade-50;
+                    }
+
+                    .ui-state-highlight {
+                        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                        color: #FFFFFF;
+                        font-weight: bold;
+                    }
+
+                    .ui-state-active {
+                        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                        color: #FFFFFF;
+                        font-weight: bold;
+                    }
+
+                    .ui-state-hover {
+                        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                        color: #FFFFFF;
+                        font-weight: bold;
+                    }
+                }
+            }            
+        }
+    }
+}
