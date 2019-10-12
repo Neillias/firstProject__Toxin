@@ -785,6 +785,18 @@ a:hover {
     left: -16px;
   }
 }
+.date-dropdown__apply-btn {
+  transition: 0s;
+  color: #BC9CFF;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.date-dropdown__apply-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .subscription-text-field__button {
   width: 2.75rem;
   height: 2.75rem;

@@ -11592,6 +11592,27 @@ function dropdown() {
 
       ;
     }
+
+    if (e.target && e.target.classList.contains('dropdown__apply-btn')) {
+      var dateContainer = e.target;
+
+      while (!dateContainer.classList.contains('dropdown')) {
+        dateContainer = dateContainer.parentNode;
+
+        if (dateContainer.classList.contains('dropdown')) {
+          for (var i = 0; i < dateContainer.children.length; i++) {
+            if (dateContainer.children[i].classList.contains('dropdown__menu-container') && dateContainer.children[i].classList.contains('dropped')) {
+              dateContainer.children[i].classList.remove('dropped');
+              dateContainer.children[i].classList.add('hidden');
+            }
+
+            if (dateContainer.children[i].classList.contains('dropdown__menu-button')) {
+              dateContainer.children[i].style.transform = 'rotate(0)';
+            }
+          }
+        }
+      }
+    }
   });
 }
 
@@ -14940,6 +14961,39 @@ function dateDropdown() {
         }
       }
     }
+
+    if (e.target && e.target.className == 'date-dropdown__apply-btn') {
+      var dateContainer = e.target,
+          rotated;
+
+      while (!dateContainer.classList.contains('date-dropdowns')) {
+        dateContainer = dateContainer.parentNode;
+
+        if (dateContainer.classList.contains('date-dropdowns')) {
+          for (var _i = 0; _i < dateContainer.children.length; _i++) {
+            var thisChildren = dateContainer.children[_i];
+
+            if (thisChildren.classList.contains('date-dropdowns__input') || thisChildren.classList.contains('date-dropdowns__input_type_filterDate')) {
+              var thisToggle = thisChildren.querySelector('.date-dropdown__toggle').firstChild;
+
+              if (thisToggle.style.transform == 'rotate(180deg)') {
+                rotated = true;
+              } else if (thisToggle.style.transform == 'rotate(0deg)') {
+                rotated = false;
+              }
+
+              if (rotated) {
+                thisToggle.style.transform = 'rotate(0)';
+              }
+            }
+
+            if (thisChildren.classList.contains('date-dropdown__datepick-container')) {
+              thisChildren.style.display = dateContainer.children[_i].style.display == 'block' ? 'none' : 'block';
+            }
+          }
+        }
+      }
+    }
   });
 }
 },{}],"../js/main.js":[function(require,module,exports) {
@@ -15011,7 +15065,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57019" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57914" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
